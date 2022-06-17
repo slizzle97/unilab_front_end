@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+  </head>
+  <body>
+    <!-- DISCOVERY-ზე გადასვლისას ხსნის API_ს გვერდს -->
+
+    <h1><b>SATELLITE INFORMATION</b></h1>
+    <div style="color: blue; margin-left: 2rem; font-size: 20px">
+      <p>Id : <span id="id" style="font-weight: bold"></span><br /></p>
+      <p>Name : <span id="name" style="font-weight: bold"></span><br /></p>
+      <p>Latittude : <span id="lan" style="font-weight: bold"></span><br /></p>
+      <p>Longitude : <span id="lon" style="font-weight: bold"> </span></p>
+    </div>
+
+    <script>
+      const url = "https://api.wheretheiss.at/v1/satellites/25544";
+
+      async function getData() {
+        const response = await fetch(url);
+        const data = await response.json();
+        const { id, name, latitude, longitude } = data;
+
+        document.getElementById("id").textContent = id;
+        document.getElementById("name").textContent = name;
+        document.getElementById("lan").textContent = latitude;
+        document.getElementById("lon").textContent = longitude;
+      }
+      getData();
+    </script>
+  </body>
+</html>

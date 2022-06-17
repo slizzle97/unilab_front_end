@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica.ttf") format("woff2"),
+    url("./fonts/Helvetica.ttf") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-oblique";
+  src: url("./fonts/Helvetica\ Oblique.ttf") format("woff2"),
+    url("./fonts/Helvetica\ Oblique.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica-bold";
+  src: url("./fonts/Helvetica-Bold-Font.ttf") format("woff2"),
+    url("./fonts/Helvetica-Bold-Font.ttf") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("./fonts/FontsFree-Net-Acumin-Pro-Book.ttf") format("woff2"),
+    url("./fonts/FontsFree-Net-Acumin-Pro-Book.ttf") format("woff");
+}
